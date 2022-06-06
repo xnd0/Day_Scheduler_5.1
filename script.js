@@ -7,6 +7,12 @@
 let btn1 = $("#btn1");
 let btn2 = $("#btn2");
 let btn3 = $("#btn3");
+let btn4 = $("#btn4");
+let btn5 = $("#btn5");
+let btn6 = $("#btn6");
+let btn7 = $("#btn7");
+let btn8 = $("#btn8");
+let btn9 = $("#btn9");
 
 
 window.setInterval(function () {
@@ -23,6 +29,7 @@ function testFunction() {
 
 
 btn1.on("click", testFunction);
+
 btn2.on("click", function() {
     console.log("btn2 clicked")
 });
