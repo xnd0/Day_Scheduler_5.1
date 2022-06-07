@@ -14,9 +14,12 @@ let btn7 = $("#btn7");
 let btn8 = $("#btn8");
 let btn9 = $("#btn9");
 
+let currentHour = moment().hour();
+
 
 window.setInterval(function () {
-    $('#clock').html(moment().format('MMM Do, YYYY H:mm:ss'))
+    $('#clock').html(moment().format('MMM Do, YYYY H:mm:ss'));
+    $('#currentHour').html("currentHour (militaryTime) is: " + currentHour);
 }, 1000);
 
 
