@@ -3,7 +3,7 @@
 // ---------------------- //
 
 
-
+// Declare Variables
 let btn1 = $("#btn1");
 let btn2 = $("#btn2");
 let btn3 = $("#btn3");
@@ -17,11 +17,31 @@ let btn9 = $("#btn9");
 let currentHour = moment().hour();
 
 
+
+// ---Functions Section--- ??
+
+// Time Display Function
 window.setInterval(function () {
     $('#clock').html(moment().format('MMM Do, YYYY H:mm:ss'));
     $('#currentHour').html("currentHour (militaryTime) is: " + currentHour);
 }, 1000);
 
+
+// Color Display Function
+// Not Working Yet
+// function currentTime() {
+
+//     let rowTime = $(row).data("data-number");
+
+//     console.log(rowTime +"rowtime");
+//     console.log(currentHour +"currentHour");
+
+//     if (currentHour > rowTime) {
+//         $("row").addClass("past");
+//     }
+// }
+
+// currentTime();
 
 
 
