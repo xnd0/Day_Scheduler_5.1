@@ -16,6 +16,15 @@ let btn9 = $("#btn9");
 
 
 let text1 = $("#text1");
+let text2 = $("#text2");
+let text3 = $("#text3");
+let text4 = $("#text4");
+let text5 = $("#text5");
+let text6 = $("#text6");
+let text7 = $("#text7");
+let text8 = $("#text8");
+let text9 = $("#text9");
+
 
 let currentHour = moment().hour();
 
@@ -34,6 +43,13 @@ window.setInterval(function () {
 function getText() {
     var userInfo1 = localStorage.getItem("text1");
     text1.text(userInfo1);
+
+    var userInfo2 = localStorage.getItem("text2");
+    text2.text(userInfo2);
+
+    var userInfo3 = localStorage.getItem("text3");
+    text3.text(userInfo3);
+    
 }
 
 getText();
@@ -43,12 +59,29 @@ getText();
 // save to storage function
 function setText() {
     localStorage.setItem("text1", text1.val());
+    localStorage.setItem("text2", text2.val());
+    localStorage.setItem("text3", text3.val());
+    localStorage.setItem("text4", text4.val());
+    localStorage.setItem("text5", text5.val());
+    localStorage.setItem("text6", text6.val());
+    localStorage.setItem("text7", text7.val());
+    localStorage.setItem("text8", text8.val());
+    localStorage.setItem("text9", text9.val());
 }
 
 btn1.on("click", function () {
     console.log("btn1 clicked, text1 is: " + text1);
     setText();
 } );
+
+btn2.on("click", function () {
+    console.log("btn2 clicked, text2 is: " + text2);
+    setText();
+} );
+
+btn3.on("click", function () {
+    setText();
+});
 
 
 
