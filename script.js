@@ -73,7 +73,6 @@ function getText() {
 getText();
 
 
-
 // save to storage function
 function setText() {
     localStorage.setItem("text1", text1.val());
@@ -86,6 +85,9 @@ function setText() {
     localStorage.setItem("text8", text8.val());
     localStorage.setItem("text9", text9.val());
 }
+
+
+// Button Clickers (9AM-5PM)
 
 btn1.on("click", function () {
     console.log("btn1 clicked, text1 is: " + text1);
@@ -129,6 +131,96 @@ btn9.on("click", function () {
 
 
 // Color Display Function
+
+function rowColor() {
+
+    console.log("currentHour is: " + currentHour)
+    if (currentHour > 9) {
+        text1.addClass("past");
+    } else if (currentHour < 9) {
+        text1.addClass("future");
+    } else {
+        text1.addClass("present");
+    }
+
+
+    if (currentHour > 10) {
+        text2.addClass("past");
+    } else if (currentHour < 10) {
+        text2.addClass("future");
+    } else {
+        text2.addClass("present");
+    }
+
+
+    if (currentHour > 11) {
+        text3.addClass("past");
+    } else if (currentHour < 11) {
+        text3.addClass("future");
+    } else {
+        text3.addClass("present");
+    }
+
+
+    if (currentHour > 12) {
+        text4.addClass("past");
+    } else if (currentHour < 12) {
+        text4.addClass("future");
+    } else {
+        text4.addClass("present");
+    }
+
+
+    if (currentHour > 13) {
+        text5.addClass("past");
+    } else if (currentHour < 13) {
+        text5.addClass("future");
+    } else {
+        text5.addClass("present");
+    }
+
+
+    if (currentHour > 14) {
+        text6.addClass("past");
+    } else if (currentHour < 14) {
+        text6.addClass("future");
+    } else {
+        text6.addClass("present");
+    }
+
+
+    if (currentHour > 15) {
+        text7.addClass("past");
+    } else if (currentHour < 15) {
+        text7.addClass("future");
+    } else {
+        text7.addClass("present");
+    }
+
+
+    if (currentHour > 16) {
+        text8.addClass("past");
+    } else if (currentHour < 16) {
+        text8.addClass("future");
+    } else {
+        text8.addClass("present");
+    }
+
+
+    if (currentHour > 17) {
+        text9.addClass("past");
+    } else if (currentHour < 17) {
+        text9.addClass("future");
+    } else {
+        text9.addClass("present");
+    }
+}
+
+
+
+
+rowColor();
+
 // Not Working Yet
 // function currentTime() {
 
