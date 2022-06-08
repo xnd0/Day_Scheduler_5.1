@@ -87,7 +87,6 @@ function setText() {
 
 
 // Button Clickers (9AM-5PM)
-
 btn1.on("click", function () {
     console.log("btn1 clicked, text1 is: " + text1);
     setText();
@@ -130,7 +129,6 @@ btn9.on("click", function () {
 
 
 // Color Display Function
-
 function rowColor() {
 
     console.log("currentHour is: " + currentHour)
@@ -216,40 +214,4 @@ function rowColor() {
 }
 
 
-
-
 rowColor();
-
-// Not Working Yet
-// function currentTime() {
-
-//     let rowTime = $(row).data("data-number");
-
-//     console.log(rowTime +"rowtime");
-//     console.log(currentHour +"currentHour");
-
-//     if (currentHour > rowTime) {
-//         $("row").addClass("past");
-//     }
-// }
-
-// currentTime();
-
-
-
-// ---Tester Area--- ??
-// function testFunction() {
-//     console.log("testFunction OK")
-// };
-
-
-// btn1.on("click", testFunction);
-
-// btn2.on("click", function() {
-//     console.log("btn2 clicked")
-// });
-// btn3.on("click", function() {
-//     console.log("btn3 works")
-// });
-
-
