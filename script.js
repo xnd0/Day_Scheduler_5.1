@@ -49,6 +49,12 @@ function getText() {
 
     var userInfo3 = localStorage.getItem("text3");
     text3.text(userInfo3);
+
+    var userInfo4 = localStorage.getItem("text4");
+    text4.text(userInfo4);
+
+    var userInfo5 = localStorage.getItem("text5");
+    text5.text(userInfo5);
     
 }
 
@@ -83,6 +89,9 @@ btn3.on("click", function () {
     setText();
 });
 
+btn4.on("click", function () {
+    setText();
+});
 
 
 
@@ -106,18 +115,18 @@ btn3.on("click", function () {
 
 
 // ---Tester Area--- ??
-function testFunction() {
-    console.log("testFunction OK")
-};
+// function testFunction() {
+//     console.log("testFunction OK")
+// };
 
 
-btn1.on("click", testFunction);
+// btn1.on("click", testFunction);
 
-btn2.on("click", function() {
-    console.log("btn2 clicked")
-});
-btn3.on("click", function() {
-    console.log("btn3 works")
-});
+// btn2.on("click", function() {
+//     console.log("btn2 clicked")
+// });
+// btn3.on("click", function() {
+//     console.log("btn3 works")
+// });
 
 
