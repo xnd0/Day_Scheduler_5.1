@@ -30,9 +30,17 @@ window.setInterval(function () {
 }, 1000);
 
 
+// load from storage function
+function getText() {
+    var userInfo1 = localStorage.getItem("text1");
+    text1.text(userInfo1);
+}
+
+getText();
+
+
 
 // save to storage function
-
 function setText() {
     localStorage.setItem("text1", text1.val());
 }
@@ -41,6 +49,10 @@ btn1.on("click", function () {
     console.log("btn1 clicked, text1 is: " + text1);
     setText();
 } );
+
+
+
+
 
 // Color Display Function
 // Not Working Yet
