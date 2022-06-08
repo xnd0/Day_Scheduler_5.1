@@ -14,6 +14,9 @@ let btn7 = $("#btn7");
 let btn8 = $("#btn8");
 let btn9 = $("#btn9");
 
+
+let text1 = $("text1");
+
 let currentHour = moment().hour();
 
 
@@ -26,6 +29,18 @@ window.setInterval(function () {
     $('#currentHour').html("currentHour (militaryTime) is: " + currentHour);
 }, 1000);
 
+
+
+// save to storage function
+
+function setText() {
+    localStorage.setItem("text1", text1.val());
+}
+
+btn1.on("click", function () {
+    console.log("btn1 clicked");
+    setText();
+} );
 
 // Color Display Function
 // Not Working Yet
