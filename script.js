@@ -34,8 +34,7 @@ let currentHour = moment().hour();
 
 // Time Display Function
 window.setInterval(function () {
-    $('#clock').html(moment().format('MMM Do, YYYY H:mm:ss'));
-    $('#currentHour').html("currentHour (militaryTime) is: " + currentHour);
+    $('#clock').html(moment().format('MMM Do, h:mm a'));
 }, 1000);
 
 
