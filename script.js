@@ -55,6 +55,18 @@ function getText() {
 
     var userInfo5 = localStorage.getItem("text5");
     text5.text(userInfo5);
+
+    var userInfo6 = localStorage.getItem("text6");
+    text6.text(userInfo6);
+    
+    var userInfo7 = localStorage.getItem("text7");
+    text7.text(userInfo7);
+
+    var userInfo8 = localStorage.getItem("text8");
+    text8.text(userInfo8);
+
+    var userInfo9 = localStorage.getItem("text9");
+    text9.text(userInfo9);
     
 }
 
@@ -90,6 +102,26 @@ btn3.on("click", function () {
 });
 
 btn4.on("click", function () {
+    setText();
+});
+
+btn5.on("click", function () {
+    setText();
+});
+
+btn6.on("click", function () {
+    setText();
+});
+
+btn7.on("click", function () {
+    setText();
+});
+
+btn8.on("click", function () {
+    setText();
+});
+
+btn9.on("click", function () {
     setText();
 });
 
