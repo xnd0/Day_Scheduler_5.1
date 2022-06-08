@@ -15,7 +15,7 @@ let btn8 = $("#btn8");
 let btn9 = $("#btn9");
 
 
-let text1 = $("text1");
+let text1 = $("#text1");
 
 let currentHour = moment().hour();
 
@@ -38,7 +38,7 @@ function setText() {
 }
 
 btn1.on("click", function () {
-    console.log("btn1 clicked");
+    console.log("btn1 clicked, text1 is: " + text1);
     setText();
 } );
 
